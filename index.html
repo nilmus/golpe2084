@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLPE 2084 - Coming Soon</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #005566, #00E6E6);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .title-container {
+            text-align: center;
+            color: black;
+            position: relative; /* Added */
+        }
+
+        .title {
+            font-size: 4em;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5);
+        }
+
+        .subtitle {
+            font-size: 2em;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 20px;
+        }
+
+        .icon {
+            width: 120px;
+            animation: pulse-animation 2.5s ease-in-out infinite alternate;
+        }
+
+        .loading-bar {
+            width: 200px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            position: absolute; /* Updated */
+            left: 50%; /* Updated */
+            transform: translateX(-50%); /* Updated */
+            border-radius: 10px;
+            margin-top: 100px;
+        }
+
+        .loading-progress {
+            height: 100%;
+            width: 34%; /* Adjust width for progress */
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+        }
+        
+        .loading-text {
+            font-size: 1.4em;
+            color: rgba(255, 255, 255, 0.4);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.0em;
+            margin-top: 170px;
+            font-family: Helvetica, sans-serif;
+        }
+
+        @keyframes pulse-animation {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.3);
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .title {
+                font-size: 2em;
+                /* Decrease font size for smaller screens */
+            }
+
+            .subtitle {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title-container">
+        <img class="icon" src="https://i.pinimg.com/originals/91/d1/38/91d138b2728e673eb7aa3ca68367357c.png" alt="Clenched Fist">
+        <h1 class="title">GOLPE 2084</h1>
+        <h2 class="subtitle">Coming Soon...</h2>
+        <!-- Loading Bar -->
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+        <h2 class="loading-text">34% developed</h2>
+    </div>
+</body>
+
+</html>
